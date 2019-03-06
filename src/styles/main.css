@@ -7,18 +7,132 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
 }
 
-#background-image{
+/* Global */
+.container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000000;
+}
+
+
+/* Header */
+
+header {
     background-image: url("../assets/backgroundImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
     background-position: center;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .4;
+    opacity: .6;
     height: 40%;
+
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #FFC0CB 3px solid;
+}
+
+
+
+
+
+header #welcome-container{
+    float: left;
+    margin-top: 20px;
+}
+
+header #welcome-container h1{
+    margin: 0;
+}
+
+header nav{
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+#user-links-container-top{
+    margin-bottom: 10px;
+}
+
+#user-links-container-top h4{
+    margin-left: 20px;
+    text-decoration-line: underline;
+    font-style: italic;
+}
+
+header a:hover{
+    color: #000000;
+    font-weight: bold;
+}
+
+#welcome-name{
+    font-size: 2em;
+    margin-left: 0.5em;
+    color: rgba(101, 27, 0, 0.843);
+    font-weight: bold;
+}
+
+#welcome-container{
+    align-self: flex-start;
+}
+
+/* Help Buttons */
+
+#help-buttons-container{
+    border-bottom: #FFC0CB 3px solid;
+    background-color: #ffffff;
+    height: 9em;
+}
+
+#help-buttons-container p{
+    font-size: 1.5em;
+}
+
+#help-buttons-container #help-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#help-buttons-container #help-buttons li{
+    border: rgb(106, 173, 240) 2px solid;
+    border-radius: 25px;
+    color:#ffffff;
+    background: rgb(106, 173, 240);    
+}
+
+#help-buttons-container #help-buttons li:hover {
+    font-weight: bold;
+    border: rgb(255, 180, 82) 2px solid;
+    color: rgb(255, 180, 82);
+    background: #ffffff;
+    
 }
