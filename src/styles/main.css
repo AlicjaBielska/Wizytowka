@@ -13,14 +13,28 @@ body{
     background-color: #f4f4f4;
 }
 
+
 /* Global */
 .container{
-    width:80%;
-    margin: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: 3em;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: auto;
+}
+
+
+
+.section-name {
+    font-weight: bold;
+    font-size: 1.7em;
 }
 
 ul {
@@ -46,6 +60,7 @@ a {
 
 header {
     background-image: url("../assets/backgroundImage.jpg");
+    border-bottom: #FFC0CB 3px solid;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,16 +69,19 @@ header {
     left: 0;
     right: 0;
     opacity: .6;
-    height: 40%;
 
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #FFC0CB 3px solid;
 }
 
-
-
-
+.header-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 header #welcome-container{
     float: left;
@@ -81,12 +99,15 @@ header nav{
 
 #user-links-container-top{
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 #user-links-container-top h4{
     margin-left: 20px;
     text-decoration-line: underline;
     font-style: italic;
+    align-self: flex-end;
 }
 
 header a:hover{
@@ -94,10 +115,15 @@ header a:hover{
     font-weight: bold;
 }
 
+#itroduce{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 #welcome-name{
     font-size: 2em;
-    margin-left: 0.5em;
-    color: rgba(101, 27, 0, 0.843);
+    margin-left: 0.2em;
+    color: rgb(7, 45, 84);
     font-weight: bold;
 }
 
@@ -107,32 +133,182 @@ header a:hover{
 
 /* Help Buttons */
 
-#help-buttons-container{
-    border-bottom: #FFC0CB 3px solid;
-    background-color: #ffffff;
-    height: 9em;
-}
-
-#help-buttons-container p{
+.section-intro{
     font-size: 1.5em;
 }
 
-#help-buttons-container #help-buttons {
+#help-buttons {
     display: flex;
     flex-direction: row;
 }
 
-#help-buttons-container #help-buttons li{
+#help-buttons li{
     border: rgb(106, 173, 240) 2px solid;
     border-radius: 25px;
     color:#ffffff;
-    background: rgb(106, 173, 240);    
+    background: rgb(106, 173, 240);
+    margin: 1em;
 }
 
-#help-buttons-container #help-buttons li:hover {
+#help-buttons li:hover {
     font-weight: bold;
     border: rgb(255, 180, 82) 2px solid;
     color: rgb(255, 180, 82);
     background: #ffffff;
     
 }
+
+/* About me */
+
+#about-me{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+}
+
+#about-me ul{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    border-right: rgb(106, 173, 240) 2px solid;
+    padding-right: 3em;
+    padding-top: 1em;
+}
+
+#about-me .informations{
+    padding-left: 1em;
+    color: rgb(106, 173, 240);
+}
+
+#text-about-me-container{
+    padding-left: 1em;
+    width: auto;
+    text-align: justify;
+}
+
+
+/* Skilss */
+
+#skills{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 2em;
+    padding-bottom: 3em;
+    padding-right: 2em;
+}
+
+
+#skills .skills-category-name{
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+#skills .skills-category-name span{
+    border-bottom: rgb(106, 173, 240) 2px solid;
+}
+
+#hard-ones-container, #soft-ones-container {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hard-ones-container div,
+#soft-ones-container div{
+    width: 100%;
+    padding-left: 10%;
+}
+
+
+
+
+/* skills input range style*/
+
+#skills input[type=range] {
+    -webkit-appearance: none;
+    width: 80%;
+}
+
+#skills input[type=range]::-webkit-slider-runnable-track {
+    width: auto;
+    height: 5px;
+    background: rgb(106, 173, 240);
+    border: none;
+    border-radius: 3px;
+}
+
+#skills input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgba(21, 76, 132, 0.816);
+    margin-top: -4px;
+}
+
+
+/* Portfolio */
+
+#portfolio{
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,minmax(auto,1fr));
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+}
+
+.box-picture img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.box-picture{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.box-picture .link{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(192, 229, 255);
+    color: #000000;
+    opacity: 0;
+}
+
+.link:hover {
+    text-align: center;
+    opacity: 0.5;
+}
+
+.hidden-text{
+    padding-top: 20%;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* Contact */
+
+
+
+
+
+
+
+
+
+
+

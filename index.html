@@ -12,19 +12,19 @@
 
     <div id="main-container">
         <header>
-            <div class="container">
+            <div class="header-container">
                 <nav id="links-container">
                     <ul>
-                        <li><a href='#'>About me</a></li>
-                        <li><a href='#'>Skills</a></li>
-                        <li><a href='#'>Portfolio</a></li>
-                        <li><a href='#'>Contact</a></li>
+                        <li><a href='#about-me-container'>About me</a></li>
+                        <li><a href='#skills-container'>Skills</a></li>
+                        <li><a href='#portfolio-container'>Portfolio</a></li>
+                        <li><a href='#contact-container'>Contact</a></li>
                     </ul>
                 </nav>
                 
                 <div id="welcome-container">
                     <h1>Hi there!</h1>
-                    <p> My name is <span id="welcome-name">Alicja Bielska </span> </br>
+                    <p> <span id="itroduce">My name is </span> <span id="welcome-name">Alicja Bielska </span> </br>
                         I am front-end developer </br>
                         lorem ipsum dolor sit amet
                     </p>
@@ -45,7 +45,7 @@
 
         <section id="help-buttons-container">
             <div class="container">
-                <p>Let me know how can I help you with your projects!</p>
+                <p class = "section-intro">Let me know how can I help you with your projects!</p>
                 <ul id="help-buttons">
                     <li><a href='#'>Contact me</a></li>
                     <li><a href='#'>Check my CV</a></li>
@@ -55,20 +55,20 @@
 
         <section id="about-me-container">
             <div class="container">
-                <p>About me</p>
+                <p class = "section-name">About me</p>
                 <div id="about-me">
                     <div id="list-about-me-container">
                         <ul id="list-about-me">
-                            <p>Full Name: <li>Alicja Bielska</li></p>
-                            <p>Age: <li> 22 years</li></p>
-                            <p>Job: <li>Freelancer</li></p>
-                            <p>Telephone<li>+48 123 123 123</li></p>
-                            <p>E-mail<li>email.email@email.com</li></p>
+                            <li>Full Name: <span class="informations">Alicja Bielska</span></li>
+                            <li>Age: <span class="informations">22 years</span></li>
+                            <li>Job: <span class="informations">Freelancer</span></li>
+                            <li>Telephone: <span class="informations">+48 123 123 123</span></li>
+                            <li>E-mail: <span class="informations">email.email@email.com</span></li>
                         </ul>
                     </div>
 
                     <div id="text-about-me-container">
-                        <p id="text-about-me">
+                        <p>
                             Cześć. Dr Gąsior prosił żeby się dogadać co do tego, o której 
                             przychodzi na zajęcia która grupa, więc wrzucam ankietę i
                             proszę żeby jedna osoba z każdej grupy zaznaczyła jakąś opcję.
@@ -81,17 +81,39 @@
         
         <section id="skills-container">
             <div class="container">
+                <p class = "section-name">Skills</p>
+                <div id="skills">
+                    <div id="hard-ones-container">
+                        <p class="skills-category-name">Hard <span>ones</span></p>
+                        <div>
+                            <p class="skill-name">html</p>
+                            <input type="range" id="html-skill" min="0" max="10" value="8">
+                        </div>
+                        <div>
+                            <p class="skill-name">css</p>
+                            <input type="range" id="css-skill" value="5" min="0" max="10">
+                        </div>
+                        <div>
+                            <p class="skill-name">java script</p>
+                            <input type="range" id="js-skill" value="3" min="0" max="10">
+                        </div>
+                    </div>
 
-                <div id="hard-ones-container">
-                    <p>html</p>
-                    <p>css</p>
-                    <p>java script</p>
-                </div>
-
-                <div id="soft-ones-container">
-                    <p>barking</p>
-                    <p>tail waving</p>
-                    <p>patience</p>
+                    <div id="soft-ones-container">
+                        <p class="skills-category-name">Soft <span>ones</span></p>
+                        <div>
+                            <p class="skill-name">teamwork</p>
+                            <input type="range" id="teamwork-skill" value="9" min="0" max="10">
+                        </div>
+                        <div>
+                            <p class="skill-name">comunication</p>
+                            <input type="range" id="comunication-skill" value="8" min="0" max="10">
+                        </div>
+                        <div>
+                            <p class="skill-name">patience</p>
+                            <input type="range" id="patience-skill" value="6" min="0" max="10">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -99,41 +121,62 @@
 
         <section id="portfolio-container">
             <div class="container">
-                <div class="box">
-                    <img src="src/assets/camera.jpg">
-                    <p>Wiener Adventures</p>
+                <p class = "section-name">Portfolio</p>
+                <div id="portfolio">
+                    <div class="box">
+                        <div class="box-picture">    
+                            <img src="src/assets/car.jpg">
+                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
+                        </div>
+                        <p>Wiener Adventures</p>
 
-                </div>
-                <div class="box">
-                    <img src="src/assets/car.jpg">
-                    <p>Wiener Adventures</p>
+                    </div>
+                    <div class="box">
+                        <div class="box-picture">    
+                            <img src="src/assets/car.jpg">
+                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
+                        </div>
+                        <p>Wiener Adventures</p>
 
-                </div>
-                <div class="box">
-                    <img src="src/assets/dog.jpg">
-                    <p>Wiener Adventures</p>
+                    </div>
+                    <div class="box">
+                        <div class="box-picture">    
+                            <img src="src/assets/dog.jpg">
+                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
+                        </div>
+                        <p>Wiener Adventures</p>
 
-                </div>
-                <div class="box">
-                    <img src="src/assets/faceonwall.jpg">
-                    <p>Wiener Adventures</p>
+                    </div>
+                    <div class="box">
+                        <div class="box-picture">    
+                            <img src="src/assets/faceonwall.jpg">
+                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
+                        </div>
+                        <p>Wiener Adventures</p>
 
-                </div>
-                <div class="box">
-                    <img src="src/assets/flower.jpg">
-                    <p>Wiener Adventures</p>
+                    </div>
+                    <div class="box">
+                        <div class="box-picture">    
+                            <img src="src/assets/flower.jpg">
+                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
+                        </div>
+                        <p>Wiener Adventures</p>
 
-                </div>
-                <div class="box">
-                    <img src="src/assets/wall.jpg">
-                    <p>Wiener Adventures</p>
+                    </div>
+                    <div class="box">
+                        <div class="box-picture">    
+                            <img src="src/assets/wall.jpg">
+                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
+                        </div>
+                        <p>Wiener Adventures</p>
 
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <section id="contact-container">
+        <section class="contact-container">
             <div class="container">
                 <div id="text-contact-container">
                     <p id="text-contact">
