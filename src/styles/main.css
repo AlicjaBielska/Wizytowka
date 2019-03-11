@@ -74,6 +74,7 @@ header {
     min-height: 70px;
 }
 
+
 .header-container {
     width: 80%;
     margin: auto;
@@ -83,54 +84,38 @@ header {
     align-items: center;
 }
 
-header #welcome-container{
-    float: left;
-    margin-top: 20px;
-}
-
-header #welcome-container h1{
-    margin: 0;
-}
 
 header nav{
     margin-top: 10px;
     align-self: flex-end;
 }
 
-#user-links-container-top{
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
+header #links-container ul li a{
+    font-size: 1.2em !important;
+    font-weight: bold;
 }
-
-#user-links-container-top h4{
-    margin-left: 20px;
-    text-decoration-line: underline;
-    font-style: italic;
-    align-self: flex-end;
-}
-
-
-#user-links-top{
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    height: 20px;
-    width: 20px;
-    align-items: center;
-}
-
-#user-link-top img{
-    height:20px;
-}
-
 
 header a:hover{
     color: #000000;
     font-weight: bold;
 }
 
-#itroduce{
+
+header #welcome-container {
+    float: left;
+    margin-top: 20px;
+    margin-left: 1em;
+}
+
+
+header #welcome-container #welcome {
+    font-size: 4em;
+    font-weight: bold;
+    color: rgb(0, 67, 133);
+    margin: 0;
+}
+
+#itroduce {
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -138,12 +123,34 @@ header a:hover{
 #welcome-name{
     font-size: 2em;
     margin-left: 0.2em;
-    color: rgb(7, 45, 84);
+    color: rgb(0, 67, 133);
     font-weight: bold;
 }
 
 #welcome-container{
     align-self: flex-start;
+}
+
+#user-links-container-top {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#user-links-container-top h4 {
+    margin-left: 20px;
+    text-decoration-line: underline;
+    font-style: italic;
+    align-self: flex-end;
+}
+
+#user-links-top {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+    overflow: hidden;
+    height: auto;
+    width: auto;
+    align-items: center;
 }
 
 /* Help Buttons */
@@ -178,8 +185,7 @@ header a:hover{
 #about-me{
     display: grid;
     grid-template-columns: auto auto;
-    padding-left: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
     padding-right: 2em;
 }
 
@@ -187,9 +193,9 @@ header a:hover{
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    border-right: rgb(106, 173, 240) 2px solid;
     padding-right: 3em;
-    padding-top: 1em;
+    padding-left: 1em;
+    padding-top: 1.5em;
 }
 
 #about-me .informations{
@@ -199,8 +205,10 @@ header a:hover{
 
 #text-about-me-container{
     padding-left: 1em;
+    padding-top: 1em;
     width: auto;
     text-align: justify;
+    border-left: rgb(106, 173, 240) 2px solid;
 }
 
 
@@ -232,7 +240,7 @@ header a:hover{
     align-items: center;
 }
 
-#hard-ones-container div,
+#hard-ones-container div, 
 #soft-ones-container div{
     width: 100%;
     padding-left: 10%;
@@ -327,13 +335,40 @@ header a:hover{
 
 }
 
+
 #text-contact-container{
     margin-top: 2em;
     width:100%;
-    height: 100%;
+    height: auto;
     background-color: rgb(106, 173, 240);
-    font-size: 0.8em;
+    font-size: 1em;
     color: #ffffff;
+}
+
+
+#user-links-container-bottom {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#user-links-container-bottom h4 {
+    font-size: 1.1em;
+    text-decoration-line: underline;
+    font-style: italic;
+    align-self: flex-end;
+    margin-right: 10%;
+
+}
+
+#user-links-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    overflow: hidden;
+    height: auto;
+    width: auto;
+    margin-right: 2px;
+    align-self: flex-end;
 }
 
 #text-contact-container p{
@@ -377,6 +412,126 @@ header a:hover{
 }
 
 
+/* media details*/
+
+@media all and (max-width:1040px) {
+
+    header #links-container{
+        margin:0;
+        align-self: center;
+    }
+
+
+    header #links-container ul li a {
+        font-size: 1em !important;
+        font-weight: bold;
+    }
+
+    header #links-container ul li a:hover {
+        color: rgb(0, 67, 133);
+        font-weight: bold;
+    }
+
+
+    header #welcome-container {
+        margin-left: 0;
+    }
+
+
+    header #welcome-container #welcome {
+        font-size: 2.5em;
+        margin-top: 1em;
+    }
+
+    #itroduce {
+        font-size: 1.3em;
+    }
+
+    #welcome-name {
+        font-size: 1.7em;
+    }
+
+    #welcome-container h3{
+        font-size: 0.9em;
+    }
+
+    /* About me */
+
+    #about-me {
+        grid-template-columns: auto auto;
+    }
+
+
+    #text-about-me-container {
+        font-size: 0.8em;
+    }
+
+
+    /* Portfolio */
+
+    .box p{
+        font-size: 0.9em;
+    }
+
+    /* Contact */
+
+
+    #text-contact-container {
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width:700px) {
+
+    /* About me */
+
+    #about-me{
+        grid-template-columns: auto;
+    }
+
+    #about-me .informations{
+        padding-left: 1em;
+        color: rgb(106, 173, 240);
+    }
+
+    #text-about-me-container{
+        margin-top: 2em;
+        margin-left: 1em; 
+        border-top: rgb(106, 173, 240) 2px solid;
+        border-left: none;
+        font-size: 0.9em;
+    }
+
+    /* Contact */
+
+    #text-contact-container {
+        font-size: 0.65em;
+    }
+
+    #user-links-container-bottom h4 {
+        font-size: 1em;
+
+    }
+
+    #user-links-bottom {
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+    }
+
+    #form-contact-container h4 {
+        font-size: 1.5em;
+    }
+
+    #form-contact-container input {
+        font-size: 0.9em;
+
+    }
+
+
+}
+
+@media all and (max-width:582px){
+    
+}
 
 
 
