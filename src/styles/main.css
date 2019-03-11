@@ -110,6 +110,21 @@ header nav{
     align-self: flex-end;
 }
 
+
+#user-links-top{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+}
+
+#user-link-top img{
+    height:20px;
+}
+
+
 header a:hover{
     color: #000000;
     font-weight: bold;
@@ -265,16 +280,16 @@ header a:hover{
     padding-right: 2em;
 }
 
+.box-picture {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
 .box-picture img{
     width: 100%;
     height: 100%;
     
-}
-
-.box-picture{
-    position: relative;
-    width: auto;
-    height: auto;
 }
 
 .box-picture .link{
@@ -302,9 +317,64 @@ header a:hover{
 
 /* Contact */
 
+#contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% auto;
+    padding-left: 2em;
+    padding-bottom: 3em;
+    padding-right: 2em;
 
+}
 
+#text-contact-container{
+    margin-top: 2em;
+    width:100%;
+    height: 100%;
+    background-color: rgb(106, 173, 240);
+    font-size: 0.8em;
+    color: #ffffff;
+}
 
+#text-contact-container p{
+    padding: 10% 5% 10% 5%;
+    text-align: justify;
+    width:auto;
+    
+}
+
+#form-contact-container{
+    width:auto;
+    height: 100%;
+    font-size: 0.8em;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+#form-contact-container h4{
+    font-size: 2em;
+    color: rgb(106, 173, 240);
+    height: auto;
+    margin-bottom: 0%;
+}
+
+#form-contact-container #form {
+    display: block;
+    height: auto;
+}
+
+#form-contact-container input {
+    border: none;
+    border-bottom: 1.5px solid rgb(106, 173, 240);
+    background: none;
+    width:80%;
+    margin-top: 5%;
+    
+}
+
+#message-input{
+    margin-top: 30% !important;
+}
 
 
 
