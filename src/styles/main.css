@@ -90,6 +90,7 @@ header nav{
     align-self: flex-end;
 }
 
+
 header #links-container ul li a{
     font-size: 1.2em !important;
     font-weight: bold;
@@ -489,6 +490,10 @@ header #welcome-container #welcome {
         grid-template-columns: auto;
     }
 
+    #list-about-me-container{
+        margin-left: 25%;
+    }
+
     #about-me .informations{
         padding-left: 1em;
         color: rgb(106, 173, 240);
@@ -529,8 +534,110 @@ header #welcome-container #welcome {
 
 }
 
-@media all and (max-width:582px){
+@media all and (max-width:580px){
     
+    /* Header */
+
+    header nav{
+        align-self: flex-start;
+    }
+
+    .header-container{
+        width:100%;
+    }
+
+    #links-container{
+        order: 3;
+        font-size: 0.95em;
+        padding: 20px 0;
+        width:100%;
+    }
+
+    #user-links-container-top{
+        margin: 0;
+    }
+
+    #user-links-container-top h4{
+        display: none;
+    }
+
+    #user-links-top{
+        order:1;
+    }
+
+    header #welcome-container{
+        order: 2;
+        margin-top: 0;
+        margin-left: 1.5em;
+    }
+
+    header #welcome-container #welcome{
+        margin-top: 0.5em;
+    }
+
+    #itroduce {
+        font-size: 1em;
+    }
+    
+    /* Help Buttons */
+
+    .section-intro {
+        font-size: 1em;
+    }
+
+    /* About me */
+
+    #about-me{
+        padding-bottom: 1em;
+    }
+
+    #list-about-me-container {
+        margin-left: 1%;
+        margin-right: 0;
+    }
+
+    #about-me ul{
+        padding-top: 0;
+    }
+
+    /* Contact */
+
+    #contact{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding-left: 1em;
+        padding-bottom: 1em;
+        padding-right: 1em;
+    }
+
+    #text-contact-container{
+        order: 2;
+    }
+
+    #user-links-container-bottom h4 {
+        font-size: 1.2em;
+
+    }
+
+    #text-contact-container p {
+        padding-top:2%;
+        padding-bottom: 2%;
+
+    }
+
+    #user-links-bottom {
+        grid-template-columns: repeat(4, minmax(auto, 1fr));
+    }
+
+
+    #message-input {
+        margin-top: 15% !important;
+    }
+
+    #form-contact-container{
+        padding-left: 5%;
+    }
+
 }
 
 
