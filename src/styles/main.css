@@ -96,8 +96,8 @@ header #links-container ul li a{
     font-weight: bold;
 }
 
-header a:hover{
-    color: #000000;
+header #links-container ul li a:hover {
+    color: rgb(0, 67, 133);
     font-weight: bold;
 }
 
@@ -168,17 +168,43 @@ header #welcome-container #welcome {
 #help-buttons li{
     border: rgb(106, 173, 240) 2px solid;
     border-radius: 25px;
-    color:#ffffff;
-    background: rgb(106, 173, 240);
     margin: 1em;
 }
 
-#help-buttons li:hover {
+#contact-me-button {
+    background: rgb(106, 173, 240);
+
+}
+
+#contact-me-button  a{
+    color:white;
+
+}
+
+
+#cv-button a{
+    color: rgb(106, 173, 240);
     font-weight: bold;
+
+}
+
+#cv-button:hover {
+    color: rgb(106, 173, 240);
     border: rgb(255, 180, 82) 2px solid;
+
+}
+
+#cv-button a:hover {
     color: rgb(255, 180, 82);
-    background: #ffffff;
-    
+    font-weight: bold;
+
+}
+
+
+#contact-me-button:hover {
+    border: rgb(255, 180, 82) 2px solid;
+    background-color: rgb(255, 180, 82);
+
 }
 
 /* About me */
@@ -289,6 +315,12 @@ header #welcome-container #welcome {
     padding-right: 2em;
 }
 
+.box a{
+    font-size: 1em;;
+    text-transform: lowercase;
+    color: rgb(106, 173, 240);
+}
+
 .box-picture {
     position: relative;
     width: auto;
@@ -355,10 +387,11 @@ header #welcome-container #welcome {
 
 #user-links-container-bottom h4 {
     font-size: 1.1em;
-    text-decoration-line: underline;
     font-style: italic;
-    align-self: flex-end;
-    margin-right: 10%;
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-top:0;
+    margin-bottom:0;
 
 }
 
@@ -370,6 +403,7 @@ header #welcome-container #welcome {
     width: auto;
     margin-right: 2px;
     align-self: flex-end;
+    margin-top:2em;
 }
 
 #text-contact-container p{
