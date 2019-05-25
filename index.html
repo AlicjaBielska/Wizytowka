@@ -17,17 +17,17 @@
                     <ul>
                         <li><a href='#about-me-container'>About me</a></li>
                         <li><a href='#skills-container'>Skills</a></li>
-                        <li><a href='#portfolio-container'>Portfolio</a></li>
                         <li><a href='#contact-container'>Contact</a></li>
                     </ul>
                 </nav>
                 
                 <div id="welcome-container">
                     <p id="welcome">Hi there!</p>
-                    <p> <span id="itroduce">My name is </span> <span id="welcome-name">Alicja Bielska </span> </br>
+                    <p> 
+                        <span id="itroduce">My name is </span> <span id="welcome-name">Alicja Bielska </span> </br>
                         <h3>
-                            I am front-end developer </br>
-                            lorem ipsum dolor sit amet
+                            I'm on my third year of University </br>
+                            I educate myself on frontend development
                         </h3>
                     </p>
                 </div>
@@ -36,10 +36,9 @@
                     <h4>User links</h4>
                     <div id="user-links-top">
                         <ul>
-                            <li><a href="https://www.facebook.com" target="_blank"><img src="src/assets/facebook-icon.png"></a></li>
-                            <li><a href="https://github.com" target="_blank"><img src="src/assets/github-icon.png"></a></li>
-                            <li><a href="https://twitter.com" target="_blank"><img src="src/assets/twitter-icon.png"></a></li>
-                            <li><a href="https://www.linkedin.com" target="_blank"><img src="src/assets/in-icon.png"></a></li>
+                            <li><a href="https://www.linkedin.com/in/alicja-bielska-ba0943158/" target="_blank"><img src="src/assets/in-icon.png"></a></li>
+                            <li><a href="https://github.com/AlicjaBielska" target="_blank"><img src="src/assets/github-icon.png"></a></li>
+                            <li><a href="https://www.facebook.com/alicja.bielska" target="_blank"><img src="src/assets/facebook-icon.png"></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -50,10 +49,10 @@
 
         <section id="help-buttons-container">
             <div class="container">
-                <p class = "section-intro">Let me know how can I help you with your projects!</p>
+                <p class = "section-intro">Let me know how can I help you!</p>
                 <ul id="help-buttons">
                     <li id="contact-me-button"><a href='#contact-container'>Contact me!</a></li>
-                    <li id="cv-button"><a href='#skills-container'>Check my CV</a></li>
+                    <li id="skills-button"><a href='#skills-container'>Check my Skills</a></li>
                 </ul>
             </div>
         </section>
@@ -65,10 +64,10 @@
                     <div id="list-about-me-container">
                         <ul id="list-about-me">
                             <li>Full Name: <span class="informations">Alicja Bielska</span></li>
-                            <li>Age: <span class="informations">22 years</span></li>
-                            <li>Job: <span class="informations">Freelancer</span></li>
-                            <li>Telephone: <span class="informations">+48 123 123 123</span></li>
-                            <li>E-mail: <span class="informations">email.email@email.com</span></li>
+                            <li>Age: <span class="informations">22 years </span></li>
+                            <li>Job: <span class="informationsJob">Data Analysis Dashboard Developer</span></li>
+                            <li>Company: <span class="informations">Nokia</span></li>
+                            <li>E-mail: <span class="informations">alicja.bielska97@gmail.com</span></li>
                         </ul>
                     </div>
 
@@ -76,10 +75,10 @@
                     <div id="text-about-me-container">
                         <p>
                             Hi! I'm studing Information Technology on University of Science 
-                            and Technology in Wrocław. </br> 
+                            and Technology in Wrocław. I'm also working as Data Analysis Dashboard Developer at Nokia</br></br> 
                             I love travelling with my family and friends,
-                            but sometimes I like travel alone. </br>
-                            I can't imagine my life without cooking and baking. I spend every free time in the kitchen.
+                            but sometimes I enjoy travelling alone. </br>
+                            I can't imagine my life without cooking and baking. I spend every free time in the kitchen to improv my cooking skills.
                         </p>
                     </div>
                 </div>
@@ -94,32 +93,54 @@
                     <div id="hard-ones-container">
                         <p class="skills-category-name">Hard <span>ones</span></p>
                         <div>
-                            <p class="skill-name">html</p>
+                            <p class="skill-name">SQL</p>
+                            <input type="range" id="sql-skill" min="0" max="10" value="8">
+                        </div><div>
+                            <p class="skill-name">HTML</p>
                             <input type="range" id="html-skill" min="0" max="10" value="8">
                         </div>
                         <div>
-                            <p class="skill-name">css</p>
-                            <input type="range" id="css-skill" value="5" min="0" max="10">
+                            <p class="skill-name">CSS</p>
+                            <input type="range" id="css-skill" value="8" min="0" max="10">
+                        </div><div>
+                            <p class="skill-name">JavaScript</p>
+                            <input type="range" id="js-skill" value="7" min="0" max="10">
                         </div>
                         <div>
-                            <p class="skill-name">java script</p>
-                            <input type="range" id="js-skill" value="3" min="0" max="10">
+                            <p class="skill-name">Python</p>
+                            <input type="range" id="python-skill" value="6" min="0" max="10">
+                        </div>
+                        <div>
+                            <p class="skill-name">Java</p>
+                            <input type="range" id="java-skill" value="6"" min="0" max="10">
+                        </div>
+                        <div>
+                            <p class="skill-name">Version Control System git</p>
+                            <input type="range" id="git-skill" value="8" min="0" max="10">
                         </div>
                     </div>
 
                     <div id="soft-ones-container">
                         <p class="skills-category-name">Soft <span>ones</span></p>
                         <div>
-                            <p class="skill-name">teamwork</p>
+                            <p class="skill-name">Teamwork</p>
+                            <input type="range" id="teamwork-skill" value="10" min="0" max="10">
+                        </div>
+                        <div>
+                            <p class="skill-name">Focus on aim</p>
+                            <input type="range" id="comunication-skill" value="9" min="0" max="10">
+                        </div>
+                        <div>
+                            <p class="skill-name">Planning and organization</p>
+                            <input type="range" id="patience-skill" value="9" min="0" max="10">
+                        </div>
+                        <div>
+                            <p class="skill-name">Precision</p>
                             <input type="range" id="teamwork-skill" value="9" min="0" max="10">
                         </div>
                         <div>
-                            <p class="skill-name">comunication</p>
-                            <input type="range" id="comunication-skill" value="8" min="0" max="10">
-                        </div>
-                        <div>
-                            <p class="skill-name">patience</p>
-                            <input type="range" id="patience-skill" value="6" min="0" max="10">
+                            <p class="skill-name">Punctuality</p>
+                            <input type="range" id="comunication-skill" value="10" min="0" max="10">
                         </div>
                     </div>
                 </div>
@@ -127,70 +148,31 @@
 
         </section>
 
-        <section id="portfolio-container">
+        <section id="experiance-container">
             <div class="container">
-                <p class = "section-name">Portfolio</p>
-                <div id="portfolio">
-                    <div class="box">
-                        <div class="box-picture">    
-                            <img src="src/assets/car.jpg">
-                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
-                        </div>
-                        <p>Trip with firends</p>
-                        <p><a href="#">www.tripwithfriends.com</a></p>
-
+                <p class="section-name">Experiance</p>
+                <div id="experiance">
+                    <div id="list-date-container">
+                        <ul id="list-date">
+                            <li>XI 2018 - now</li>
+                            <li>VI - X 2018</li>
+                            <li>VII - IX 2017</li>
+                            <li>VII - XII 2016</li>
+                        </ul>
                     </div>
-                    <div class="box">
-                        <div class="box-picture">    
-                            <img src="src/assets/car.jpg">
-                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
-                        </div>
-                        <p>Journey</p>
-                        <p><a href="#">www.journey.com</a></p>
-
-                    </div>
-                    <div class="box">
-                        <div class="box-picture">    
-                            <img src="src/assets/dog.jpg">
-                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
-                        </div>
-                        <p>Fox on a street</p>
-                        <p><a href="#">www.foxonthestreet.com</a></p>
-
-                    </div>
-                    <div class="box">
-                        <div class="box-picture">    
-                            <img src="src/assets/faceonwall.jpg">
-                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
-                        </div>
-                        <p>Face on wall</p>
-                        <p><a href="#">www.faceonwall.com</a></p>
-
-                    </div>
-                    <div class="box">
-                        <div class="box-picture">    
-                            <img src="src/assets/flower.jpg">
-                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
-                        </div>
-                        <p>Tree in the air</p>
-                        <p><a href="#">www.treeintheair.com</a></p>
-
-                    </div>
-                    <div class="box">
-                        <div class="box-picture">    
-                            <img src="src/assets/wall.jpg">
-                            <a class="link" href="#"><p class="hidden-text">Wiener Adventures</p></a>
-                        </div>
-                        <p>Adventures</p>
-                        <p><a href="#">www.adventures.com</a></p>
-
+                    <div id="list-experiance-container">
+                        <ul id="list-experiance">
+                            <li>Data Analysis Dashboard Developer at Nokia</li>
+                            <li>Work&Travel program in United States of America</li>
+                            <li>Campsite in Spain at Eurocamp</li>
+                            <li>Receptionist at Lifefitnessclub in Ostrów Wielkopolski</li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section class="contact-container">
+        <section id="contact-container">
             <div class="container">
                 <div id="contact">
                     <div id="text-contact-container">
@@ -207,26 +189,25 @@
                         <nav id="user-links-container-bottom">
                             
                             <h4>Poland, Wrocław</h4>
-                            <h4>Psia 12/3 50-000</h4>
-                            <h4>+48 123 123 123</h4>
-                            <h4> email.email@email.com</h4>
+                            <h4>alicja.bielska97@gmail.com</h4>
                             <ul id="user-links-bottom">
-                                    <li><a href="https://www.facebook.com" target="_blank"><img src="src/assets/facebook-icon.png"></a></li>
-                                    <li><a href="https://github.com" target="_blank"><img src="src/assets/github-icon.png"></a></li>
-                                    <li><a href="https://twitter.com" target="_blank"><img src="src/assets/twitter-icon.png"></a></li>
-                                    <li><a href="https://www.linkedin.com" target="_blank"><img src="src/assets/in-icon.png"></a></li>
+                                <li><a href="https://www.linkedin.com/in/alicja-bielska-ba0943158/" target="_blank"><img src="src/assets/in-icon.png"></a></li>
+                                <li><a href="https://github.com/AlicjaBielska" target="_blank"><img src="src/assets/github-icon.png"></a></li>
+                                <li><a href="https://www.facebook.com/alicja.bielska" target="_blank"><img src="src/assets/facebook-icon.png"></a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
 
                     <div id="form-contact-container">
                         <h4>Feel free to contact me!</h4>
-                        <div id="form">
-                            <input id="name-input" type="text" placeholder="Name" required>
-                            <input id="email-input" type="text" placeholder="Your email adress"  required>
-                            <input id="about-input" type="text" placeholder="What is it about?" required>
-                            <input id="message-input" type="text" placeholder="Message" required>
-                        </div>
+                        <form id="formMessage">
+                            <input id="name-input" name="name-input" type="text" placeholder="Name" required>
+                            <input id="email-input" name="email-input" type="text" placeholder="Your email adress"  required>
+                            <input id="about-input" name="about-input" type="text" placeholder="What is it about?" required>
+                            <input id="message-input" name="message-input" type="text" placeholder="Message" required>
+                        </form>
+                        <button id="submit-button" type="submit" form="formMessage" value="Submit">Send Message</button>
                     </d>
                 </div>
             </div>
